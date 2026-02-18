@@ -80,7 +80,7 @@ function drawStars() {
     let star = stars[i];
 
     ctx.beginPath();
-    ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+    ctx.fillRect(star.x, star.y, 2, 2);
     ctx.fillStyle = `rgba(0, 234, 255, ${star.alpha})`;
     ctx.fill();
 
