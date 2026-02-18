@@ -13,6 +13,7 @@ body {
   background: #0f172a;
   color: #ffffff;
   line-height: 1.7;
+  padding-top: 100px;   /* THIS IS IMPORTANT */
 }
 
 /* ===== SECTION SPACING ===== */
