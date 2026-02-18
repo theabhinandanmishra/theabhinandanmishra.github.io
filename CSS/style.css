@@ -492,3 +492,50 @@ header.sticky {
   }
 
 }
+/* ===== EXPERIENCE SECTION ===== */
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.experience-card:hover {
+  background: #263445;
+  transform: translateY(-6px);
+}
+
+.experience-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.experience-card h4 {
+  font-size: 16px;
+  color: #00eaff;
+  margin-bottom: 5px;
+}
+
+.experience-card span {
+  font-size: 14px;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
