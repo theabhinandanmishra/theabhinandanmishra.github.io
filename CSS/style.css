@@ -110,16 +110,24 @@ section {
 .home-img img,
 .about-img img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   border-radius: 15px;
 }
 
 /* ===== About ===== */
-.about {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.about-img {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 2rem;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 500px;   /* Increase this value */
+  height: 450px;      /* Control vertical size */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== Headings ===== */
