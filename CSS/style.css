@@ -430,13 +430,20 @@ header.sticky {
 }
 
 .experience-card ul {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .experience-card li {
-  margin-bottom: 8px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 15px;
   color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Highlight Bullet Color */
+.experience-card li::marker {
+  color: #00eaff;   /* Highlight cyan */
+  font-size: 18px;
 }
 #particles-bg {
   position: fixed;
