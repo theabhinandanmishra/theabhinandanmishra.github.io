@@ -85,7 +85,8 @@ header.sticky {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  min-height: auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
   background: linear-gradient(
     135deg,
     #0f172a 0%,
