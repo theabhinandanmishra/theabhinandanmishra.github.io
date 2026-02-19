@@ -601,6 +601,8 @@ body {
 }
 /* ===== CONTACT SECTION DESIGN ===== */
 
+/* ===== CONTACT SECTION 3D DESIGN ===== */
+
 .contact {
   display: flex;
   justify-content: center;
@@ -609,37 +611,79 @@ body {
 }
 
 .contact-box {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  padding: 50px 40px;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  padding: 60px 50px;
+  border-radius: 25px;
   width: 100%;
-  max-width: 500px;
-  border: 1px solid rgba(0, 234, 255, 0.2);
+  max-width: 550px;
+  text-align: center;
+  box-shadow: 
+    0 25px 50px rgba(0,0,0,0.6),
+    inset 0 0 40px rgba(0,234,255,0.05);
+  border: 1px solid rgba(0,234,255,0.15);
+  transition: 0.4s ease;
+}
+
+.contact-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 30px 70px rgba(0,234,255,0.3),
+    inset 0 0 60px rgba(0,234,255,0.1);
 }
 
 .contact-box h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 34px;
+  margin-bottom: 35px;
   color: #00eaff;
+  letter-spacing: 1px;
 }
 
+/* Contact Items */
 .contact-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 18px;
-  font-size: 16px;
+  gap: 15px;
+  margin-bottom: 22px;
+  font-size: 17px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: 0.3s ease;
 }
 
+/* 3D Hover Effect */
+.contact-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.05);
+}
+
+/* ICON SIZE */
 .contact-item i {
-  font-size: 22px;
-  color: #00eaff;
+  font-size: 24px;
+  transition: 0.3s ease;
 }
 
+/* Email Color */
+.contact-item.email i {
+  color: #EA4335;
+}
+
+/* Phone Color */
+.contact-item.phone i {
+  color: #00c853;
+}
+
+/* WhatsApp Real Brand Color */
+.contact-item.whatsapp i {
+  color: #25D366;
+}
+
+/* LinkedIn Real Brand Color */
+.contact-item.linkedin i {
+  color: #0A66C2;
+}
+
+/* Link Style */
 .contact-item a {
   color: #ffffff;
   text-decoration: none;
