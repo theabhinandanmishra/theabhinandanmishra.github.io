@@ -734,13 +734,6 @@ body {
    FINAL PREMIUM SKILLS SECTION
 ========================================= */
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 60px;
-}
-
 /* Skill Card */
 .skill-card {
   background: linear-gradient(145deg, #1e293b, #162033);
@@ -812,6 +805,59 @@ body {
 
   .skill-card {
     padding: 25px;
+  }
+}
+/* =========================================
+   FINAL SKILLS LAYOUT (2 TOP + 3 BOTTOM)
+========================================= */
+
+.skills-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 60px;
+}
+
+/* DESKTOP LAYOUT */
+@media (min-width: 992px) {
+
+  .skills-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* First Row - 2 Cards Centered */
+  .skills-grid .skill-card:nth-child(1) {
+    grid-column: 2 / span 2;
+  }
+
+  .skills-grid .skill-card:nth-child(2) {
+    grid-column: 4 / span 2;
+  }
+
+  /* Second Row - 3 Cards */
+  .skills-grid .skill-card:nth-child(3) {
+    grid-column: 1 / span 2;
+  }
+
+  .skills-grid .skill-card:nth-child(4) {
+    grid-column: 3 / span 2;
+  }
+
+  .skills-grid .skill-card:nth-child(5) {
+    grid-column: 5 / span 2;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
