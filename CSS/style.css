@@ -796,22 +796,23 @@ body {
 }
 
 /* AWS Icon */
-.aws {
+.cloud-icons .aws {
   font-size: 42px;
   color: #FF9900;
 }
 
 /* GCP Icon */
 .gcp-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
   transition: 0.4s ease;
 }
 
-/* Hover Glow */
+/* Hover Animation */
+.skill-card:hover .cloud-icons i,
 .skill-card:hover .gcp-icon {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 10px #4285F4);
+  transform: scale(1.2);
 }
 /* =========================================
    RESPONSIVE FIX
