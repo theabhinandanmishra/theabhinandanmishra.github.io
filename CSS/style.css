@@ -17,7 +17,7 @@ body {
 
 /* ===== SECTION SPACING ===== */
 section {
-  padding: 120px 10%;
+  padding: 80px 10%;
 }
 
 /* ===== HEADER ===== */
@@ -85,7 +85,7 @@ header.sticky {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 3rem;
-  padding-top: 80px;
+  padding-top: 110px;
   padding-bottom: 60px;
   background: linear-gradient(
     135deg,
