@@ -956,3 +956,43 @@ header.sticky {
   transform-style: preserve-3d;
   box-shadow: 0 25px 60px rgba(0,0,0,0.6);
 }
+/* ===== PREMIUM VISITOR COUNTER ===== */
+
+.visitor-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border: 1px solid rgba(0, 234, 255, 0.2);
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.6),
+    inset 0 0 40px rgba(0,234,255,0.05);
+  backdrop-filter: blur(12px);
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.4s ease;
+}
+
+.visitor-container:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 30px 70px rgba(0,234,255,0.3),
+    inset 0 0 60px rgba(0,234,255,0.1);
+}
+
+.visitor-container h3 {
+  font-size: 16px;
+  color: #00eaff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.visitor-count {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-shadow: 0 0 15px rgba(0,234,255,0.4);
+}
