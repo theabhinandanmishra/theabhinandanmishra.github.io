@@ -36,10 +36,10 @@ header {
   backdrop-filter: blur(10px);       /* Smooth glass effect */
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
+/* ONLY THIS spacing method */
 .home {
-  margin-top: 80px;
+  padding-top: 120px;
 }
-
 header.sticky {
   background: #111827;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -580,10 +580,6 @@ header.sticky {
 
 /* Mobile Devices */
 @media (max-width: 768px) {
-
-  body {
-    padding-top: 70px;
-  }
 
   header {
     height: 65px;
@@ -1249,11 +1245,6 @@ header.sticky {
 
 /* ========== Mobile ========== */
 @media (max-width: 768px) {
-
-  body {
-    padding-top: 70px;
-  }
-
   section {
     padding: 90px 20px;
   }
