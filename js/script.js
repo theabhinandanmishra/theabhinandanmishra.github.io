@@ -97,3 +97,35 @@ function drawStars() {
 }
 
 drawStars();
+/* =============================
+   3D Profile Image Effect
+============================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const card = document.querySelector(".image-3d");
+
+  if (!card) return; // Safety check
+
+  const img = card.querySelector("img");
+
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = -(y - centerY) / 18;
+    const rotateY = (x - centerX) / 18;
+
+    img.style.transform =
+      `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    img.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+  });
+
+});
