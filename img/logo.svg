@@ -1,4 +1,4 @@
-<svg width="150" height="60" viewBox="0 0 150 60" xmlns="http://www.w3.org/2000/svg">
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
     <!-- Metallic Gradient -->
@@ -18,7 +18,7 @@
 
     <!-- Glow Effect -->
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -26,23 +26,39 @@
     </filter>
   </defs>
 
-  <!-- Rotating Group -->
+  <!-- OUTER ROTATING CIRCLE (Clockwise) -->
   <g>
     <animateTransform attributeName="transform"
       type="rotate"
-      from="0 75 30"
-      to="360 75 30"
-      dur="25s"
+      from="0 80 80"
+      to="360 80 80"
+      dur="20s"
       repeatCount="indefinite"/>
 
-    <!-- Neon Shadow -->
+    <circle cx="80" cy="80" r="65"
+      fill="none"
+      stroke="url(#neon)"
+      stroke-width="4"
+      filter="url(#glow)"/>
+  </g>
+
+  <!-- INNER AM (Anti-Clockwise Rotation) -->
+  <g>
+    <animateTransform attributeName="transform"
+      type="rotate"
+      from="360 80 80"
+      to="0 80 80"
+      dur="20s"
+      repeatCount="indefinite"/>
+
+    <!-- Neon Glow Shadow -->
     <text
       x="50%"
       y="50%"
       text-anchor="middle"
       dominant-baseline="middle"
       font-family="Jost, sans-serif"
-      font-size="25"
+      font-size="38"
       font-weight="800"
       fill="url(#neon)"
       filter="url(#glow)"
@@ -50,19 +66,19 @@
       AM
     </text>
 
-    <!-- Metallic Text -->
+    <!-- Metallic Main Text -->
     <text
       x="50%"
       y="50%"
       text-anchor="middle"
       dominant-baseline="middle"
       font-family="Jost, sans-serif"
-      font-size="25"
+      font-size="38"
       font-weight="800"
       fill="url(#metal)"
       stroke="url(#neon)"
-      stroke-width="0.8"
-      letter-spacing="1.5">
+      stroke-width="1"
+      letter-spacing="0">
       AM
     </text>
 
