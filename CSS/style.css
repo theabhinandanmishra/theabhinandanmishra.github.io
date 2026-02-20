@@ -480,6 +480,18 @@ header.sticky {
   color: #00eaff;
   font-size: 18px;
 }
+/* Company Link Style */
+.company-link {
+  color: #00eaff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.company-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(0,234,255,0.7);
+}
 /* =========================================
    COMPLETE MOBILE OPTIMIZATION
 ========================================= */
