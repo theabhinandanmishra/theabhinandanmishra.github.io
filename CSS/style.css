@@ -1080,3 +1080,75 @@ header.sticky {
     font-size: 26px;
   }
 }
+/* =========================================
+   PERFECT MOBILE CENTER ALIGN FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 100px 6% 60px 6%;
+  }
+
+  .home-text {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-text h3,
+  .home-text h1,
+  .home-text h5,
+  .home-text p {
+    text-align: center;
+  }
+
+  .home-text p {
+    max-width: 95%;
+  }
+
+  /* Center buttons perfectly */
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .social-btn {
+    width: 85%;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 85%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+
+  /* Hide image in hero for clean mobile look */
+  .home-img {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+
+  .home-text h1 {
+    font-size: 24px;
+  }
+
+  .home-text h5 {
+    font-size: 13px;
+  }
+
+  .home-text p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
