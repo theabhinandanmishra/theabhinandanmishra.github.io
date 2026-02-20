@@ -894,3 +894,16 @@ body {
   transform: rotateY(12deg) rotateX(8deg) scale(1.03);
   box-shadow: 0 35px 80px rgba(0,234,255,0.35);
 }
+.image-3d {
+  perspective: 1000px;
+}
+
+.image-3d img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 25px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
