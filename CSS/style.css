@@ -968,64 +968,6 @@ header.sticky {
   transform-style: preserve-3d;
   box-shadow: 0 25px 60px rgba(0,0,0,0.6);
 }
-/* ===== 3D EMBOSSED VISITOR COUNT ===== */
-
-.visitor-count {
-  font-size: 28px;   /* Keep your smaller size */
-  font-weight: 800;
-  letter-spacing: 3px;
-  color: #ffffff;
-
-  display: inline-block;
-  position: relative;
-  transition: all 0.4s ease;
-
-  /* 3D layered depth */
-  text-shadow:
-    0 1px 0 #0f172a,
-    0 2px 0 #0c1424,
-    0 3px 0 #09101d,
-    0 4px 6px rgba(0,0,0,0.7),
-    0 0 12px rgba(0,234,255,0.6),
-    0 0 20px rgba(0,234,255,0.4);
-}
-
-/* Hover Lift + Glow Boost */
-/* ===== CENTERED VISITOR CONTAINER ===== */
-
-.visitor-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;       /* Center content horizontally */
-  justify-content: center;   /* Center content vertically */
-
-  width: 200px;
-  margin: 40px auto;         /* This centers the entire card */
-
-  padding: 20px 25px;
-  border-radius: 18px;
-
-  background: linear-gradient(145deg, #1e293b, #0f172a);
-  border: 1px solid rgba(0, 234, 255, 0.2);
-
-  box-shadow:
-    0 15px 40px rgba(0,0,0,0.6),
-    inset 0 0 30px rgba(0,234,255,0.05);
-
-  backdrop-filter: blur(10px);
-
-  text-align: center;
-}
-
-  text-shadow:
-    0 2px 0 #0f172a,
-    0 4px 0 #0c1424,
-    0 6px 10px rgba(0,0,0,0.9),
-    0 0 18px rgba(0,234,255,0.9),
-    0 0 35px rgba(0,234,255,0.7);
-}
-* ===== FIX CLICK BLOCKING ISSUE ===== */
-
 /* Allow clicks through background layers */
 #particles-bg,
 #cursor-canvas {
