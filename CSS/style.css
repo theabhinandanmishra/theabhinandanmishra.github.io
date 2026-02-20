@@ -1333,16 +1333,6 @@ header {
     align-items: center;
     width: 100%;
   }
-  /* ===== DESKTOP NAV RESET ===== */
-.navlist {
-  position: static;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  left: auto;
-  transform: none;
-}
-
   .home-text h1 {
     font-size: 26px;
   }
