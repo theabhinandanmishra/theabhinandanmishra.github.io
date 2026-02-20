@@ -1110,7 +1110,7 @@ header.sticky {
   .home {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 100px 6% 60px 6%;
+    padding: 90px 10% 60px 10%;
   }
 
   .home-text {
