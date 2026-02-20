@@ -195,10 +195,10 @@ header.sticky {
   max-width: 600px;
 }
 
-/* ===== ABOUT IMAGE ===== */
+/* ===== PREMIUM 3D ABOUT IMAGE ===== */
+
 .about-img {
-  display: flex;
-  justify-content: center;
+  perspective: 1200px;
 }
 
 .about-img img {
@@ -206,8 +206,26 @@ header.sticky {
   max-width: 550px;
   height: 500px;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+
+  border: 1px solid rgba(0, 234, 255, 0.2);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.7),
+    inset 0 0 40px rgba(0, 234, 255, 0.05);
+
+  position: relative;
+}
+
+/* Hover 3D Effect */
+.about-img img:hover {
+  transform: translateY(-15px) rotateY(6deg) rotateX(4deg);
+  box-shadow:
+    0 40px 90px rgba(0, 234, 255, 0.3),
+    inset 0 0 60px rgba(0, 234, 255, 0.1);
 }
 
 /* ===== SECTION HEADINGS ===== */
