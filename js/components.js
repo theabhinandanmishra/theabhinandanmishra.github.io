@@ -1,0 +1,316 @@
+export const renderBackground = () => `
+  <div class="cyber-bg">
+    <!-- Rotating Cyber Rings -->
+    <svg viewBox="0 0 800 800" class="cyber-rings">
+      <circle cx="400" cy="400" r="300" stroke="#0A66C2" stroke-width="1.5" fill="none" opacity="0.15" />
+      <circle cx="400" cy="400" r="240" stroke="#00eaff" stroke-width="1.2" fill="none" opacity="0.12" />
+      <circle cx="400" cy="400" r="180" stroke="#0A66C2" stroke-width="1" fill="none" opacity="0.1" />
+    </svg>
+
+    <!-- Cloud Outline -->
+    <svg viewBox="0 0 600 400" class="cloud-outline">
+      <path d="M180 260
+             Q150 200 220 180
+             Q240 140 300 160
+             Q350 130 390 170
+             Q450 170 460 220
+             Q520 230 500 280
+             Z" stroke="#00eaff" stroke-width="2" fill="none" opacity="0.1" />
+    </svg>
+
+    <!-- Network Nodes -->
+    <div class="network">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+`;
+
+export const renderHeader = () => `
+  <header>
+    <!-- Mobile Menu Icon -->
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <!-- Left Logo -->
+    <div id="loader">
+      <img src="img/logo.svg" alt="Loading">
+    </div>
+
+    <!-- Center Navigation -->
+    <ul class="navlist">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Right Button -->
+    <a href="resume/ABHINANDAN MISHRA.pdf" target="_blank" class="top-btn">
+      View Resume
+    </a>
+  </header>
+`;
+
+export const renderHome = () => `
+  <section class="home" id="home">
+    <div class="home-text">
+      <h3>Hello, I'm</h3>
+      <h1>Abhinandan A. Mishra</h1>
+      <h5>
+        <span> IT & Operations Manager | Infrastructure | Cloud | Security | Cost Optimization</span>
+      </h5>
+
+      <p>
+        Experienced IT & Operations Manager with strong expertise in IT Infrastructure,
+        Cloud Platforms (AWS & GCP), Security Governance, Procurement Strategy, and
+        Cost Optimization. Proven ability to lead enterprise IT operations, manage
+        vendor ecosystems, drive automation initiatives, and support scalable digital
+        transformation programs aligned with business objectives.
+      </p>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/abhinandan-mishra-a05m08/" target="_blank" class="social-btn linkedin">
+          <i class="bx bxl-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/abhinandanmishra-it" target="_blank" class="social-btn github">
+          <i class="bx bxl-github"></i> GitHub
+        </a>
+
+        <a href="resume/ABHINANDAN MISHRA.pdf" download class="social-btn btn">Download Resume</a>
+
+      </div>
+    </div>
+
+    <div class="home-img">
+      <div class="image-3d">
+        <img src="img/Abhi.JPG" alt="Abhi Profile Image" />
+      </div>
+    </div>
+  </section>
+`;
+
+export const renderAbout = () => `
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="img/about-me.jpeg" alt="About Image" />
+    </div>
+
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        Experienced IT & Operations Manager with hands-on expertise in IT Infrastructure,
+        Cloud Platforms (AWS & GCP), Security Governance, and Enterprise IT Operations.
+        Skilled in managing day-to-day IT environments while driving improvements in
+        performance, reliability, and cost efficiency.
+      </p>
+
+      <p>
+        Proven track record in overseeing multi-location infrastructure, leading vendor
+        management and procurement activities, supporting cloud migration initiatives,
+        and implementing automation to enhance operational effectiveness. Focused on
+        maintaining secure, scalable, and high-availability systems aligned with business
+        requirements.
+      </p>
+
+      <p>
+        Strong collaborator with cross-functional teams, ensuring IT operations support
+        organizational growth, digital initiatives, and continuous process optimization
+        within dynamic business environments.
+      </p>
+    </div>
+  </section>
+`;
+
+export const renderExperience = () => `
+  <section class="experience" id="experience">
+    <div class="heading">
+      <h2>Professional Experience</h2>
+    </div>
+
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>Manager – IT Infrastructure, Operations & Procurement</h3>
+        <h4>
+          <a href="https://www.gtet.in" target="_blank" class="company-link">
+            Greater Than Educational Technologies (GTET)
+          </a>
+        </h4>
+        <span>Jan 2025 – Present | Hyderabad, India</span>
+        <ul>
+          <li>Lead enterprise IT infrastructure operations including cloud platforms (AWS & GCP), on-premise data centers, networks, servers, and security systems.</li>
+          <li>Manage end-to-end IT operations ensuring high availability, performance optimization, and multi-location service reliability.</li>
+          <li>Drive IT procurement strategy covering hardware, software, and managed services while overseeing vendor governance and SLA compliance.</li>
+          <li>Implement infrastructure and cloud cost optimization initiatives to improve resource utilization and operational efficiency.</li>
+          <li>Coordinate budgeting, forecasting, and operational reporting for senior leadership (SVP level).</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <h3>Division Manager</h3>
+        <h4>
+          <a href="https://www.nspira.in" target="_blank" class="company-link">
+            Nspira Management Services Pvt Ltd
+          </a>
+        </h4>
+        <span>Sep 2022 – Dec 2024 | Rajasthan, India</span>
+        <ul>
+          <li>Led planning and execution of large-scale education infrastructure and technology projects across multiple locations.</li>
+          <li>Ensured compliance, quality standards, and timely project delivery aligned with organizational objectives.</li>
+          <li>Managed procurement, budgeting, vendor coordination, and operational oversight for division-level activities.</li>
+          <li>Collaborated with cross-functional teams to streamline processes and improve execution efficiency.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <h3>Hardware Team Lead</h3>
+        <h4>
+          <a href="https://www.nspira.in" target="_blank" class="company-link">
+            Nspira Management Services Pvt Ltd
+          </a>
+        </h4>
+        <span>Oct 2015 – Aug 2022 | Maharashtra, India</span>
+        <ul>
+          <li>Led IT hardware and infrastructure operations across multiple campuses in North India.</li>
+          <li>Managed deployment, maintenance, and standardization of IT systems and network environments.</li>
+          <li>Acted as regional escalation point for critical infrastructure incidents and operational issues.</li>
+          <li>Supervised technical teams to ensure timely service delivery and infrastructure uptime.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <h3>Senior Hardware Engineer</h3>
+        <h4>
+          <a href="https://www.narayanagroup.com" target="_blank" class="company-link">
+            The Narayana Group
+          </a>
+        </h4>
+        <span>Jun 2015 – Sep 2015 | Mumbai, India</span>
+        <ul>
+          <li>Managed IT hardware infrastructure supporting classrooms, labs, and administrative operations.</li>
+          <li>Coordinated with vendors for procurement, maintenance, and asset lifecycle management.</li>
+          <li>Ensured reliable operation of academic systems and network infrastructure.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <h3>Hardware & Network Engineer</h3>
+        <h4>Microdyne Computer</h4>
+        <span>July 2010 – July 2015 | Mumbai, India</span>
+        <ul>
+          <li>Provided hardware and software troubleshooting support to enterprise and educational clients.</li>
+          <li>Installed, configured, and maintained wired and wireless network infrastructure.</li>
+          <li>Managed servers, routers, switches, and peripheral systems across multiple institutions.</li>
+          <li>Led IT infrastructure deployment and maintenance for 5+ educational institutions.</li>
+          <li>Delivered on-site installations, system upgrades, and technical support services.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+`;
+
+export const renderProjects = () => `
+  <section class="projects" id="projects">
+    <div class="heading">
+      <h2>Strategic Projects</h2>
+    </div>
+
+    <div class="portfolio-content">
+      <div class="col">
+        <h3>AWS to GCP Enterprise Migration</h3>
+        <p>Led cloud migration strategy from AWS to GCP including workload assessment, cost benchmarking, architecture redesign, and performance optimization. Achieved improved cost efficiency and operational scalability.</p>
+      </div>
+
+      <div class="col">
+        <h3>Enterprise Storage Cost Optimization</h3>
+        <p>Designed and implemented S3 lifecycle policies transitioning data to Glacier IR & Deep Archive. Reduced storage costs significantly while maintaining compliance and data availability standards.</p>
+      </div>
+
+      <div class="col">
+        <h3>Multi-Location IT Infrastructure Standardization</h3>
+        <p>Standardized IT infrastructure across multiple locations ensuring high availability, centralized governance, vendor alignment, and improved SLA performance.</p>
+      </div>
+    </div>
+  </section>
+`;
+
+export const renderSkills = () => `
+  <section id="skills">
+    <div class="heading">
+      <h2>Core Skills & Expertise</h2>
+    </div>
+
+    <div class="skills-row-2">
+      <div class="skill-card">
+        <div class="cloud-icons">
+          <i class="bx bxl-aws aws"></i>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" class="gcp-icon">
+        </div>
+        <h3>Cloud Technologies</h3>
+        <p>AWS (EC2, S3, Route 53, CLI), GCP, Cloud Migration, Data Center Oversight</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="bx bx-server infra"></i>
+        <h3>IT Infrastructure</h3>
+        <p>Enterprise Infrastructure, Server Administration, Multi-location IT Ops</p>
+      </div>
+    </div>
+
+    <div class="skills-row-3">
+      <div class="skill-card">
+        <i class="bx bx-shield security"></i>
+        <h3>Networking & Security</h3>
+        <p>Network Design, Firewalls, Cybersecurity Implementation</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="bx bx-data storage"></i>
+        <h3>Storage & Systems</h3>
+        <p>S3 Lifecycle, Office 365, Google Workspace</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="bx bx-line-chart leadership"></i>
+        <h3>IT Operations & Leadership</h3>
+        <p>IT Operations, Budgeting, Procurement, Project Implementation</p>
+      </div>
+    </div>
+  </section>
+`;
+
+export const renderContact = () => `
+  <section class="contact" id="contact">
+    <div class="contact-box">
+      <h2>Let’s Connect</h2>
+      <div class="contact-item email">
+        <i class="bx bx-envelope"></i>
+        <a href="mailto:mishra.ravi94@gmail.com">mishra.ravi94@gmail.com</a>
+      </div>
+      <div class="contact-item phone">
+        <i class="bx bx-phone"></i>
+        <a href="tel:+919930299454">+91 99302 99454</a>
+      </div>
+      <div class="contact-item whatsapp">
+        <i class="bx bxl-whatsapp"></i>
+        <a href="https://wa.me/919930299454?text=Hello%20Abhinandan,%20I%20would%20like%20to%20connect." target="_blank">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-item linkedin">
+        <i class="bx bxl-linkedin"></i>
+        <a href="https://www.linkedin.com/in/abhinandan-mishra-a05m08/" target="_blank">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+`;
+
+export const renderFooter = () => `
+  <div class="ends">
+    <p>© ${new Date().getFullYear()} Abhinandan Mishra. All Rights Reserved. Designed & Developed with Precision.</p>
+  </div>
+`;
