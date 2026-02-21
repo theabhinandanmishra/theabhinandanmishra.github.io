@@ -32,7 +32,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 10%;
-  background: rgba(15, 23, 42, 0.95);  /* Slightly solid */
+  background: rgba(15, 23, 42, 0.85);  /* Slightly solid */
   backdrop-filter: blur(10px);
 }
 
