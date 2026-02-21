@@ -1,4 +1,11 @@
 /* ===== GLOBAL RESET ===== */
+/* ===== FIXED HEADER SPACE FIX ===== */
+body {
+  background: #0f172a;
+  color: #ffffff;
+  line-height: 1.7;
+  padding-top: 80px;   /* Prevent content going behind header */
+}
 * {
   padding: 0;
   margin: 0;
@@ -20,24 +27,25 @@ section {
   padding: 80px 10%;
 }
 
-/* ===== /* ===== HEADER ===== */
+/* ===== HEADER ===== */
 header {
-    position: fixed;        /* Fix to top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;           /* Reduce height */
-    background: #0b1c2d;    /* Your dark color */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 8%;
-    z-index: 1000;
-    transition: 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;            /* Clean fixed height */
+  background: #0b1c2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  z-index: 1000;
+  transition: 0.3s ease;
 }
-/* Add shadow when scrolling */
+
+/* Sticky shadow */
 header.sticky {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 /* Logo */
 .logo img {
@@ -1484,18 +1492,6 @@ header.sticky {
     white-space: nowrap;
   }
 }
-
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #0f172a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  animation: fadeOut 2s ease 2s forwards;
-}
-
 @keyframes fadeOut {
   to {
     opacity: 0;
