@@ -28,34 +28,40 @@
 
 <canvas id="particles-bg"></canvas>
 
-  <!-- Global Rotating Background -->
-<div class="global-rotating-bg">
-  <svg viewBox="0 0 800 800" class="linkedin-rotate">
-    <defs>
-      <linearGradient id="linkedinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#0A66C2"/>
-        <stop offset="100%" stop-color="#00eaff"/>
-      </linearGradient>
-    </defs>
+  <!-- CYBER SECURITY BACKGROUND -->
+<div class="cyber-bg">
 
-    <circle cx="400" cy="400" r="280"
-      stroke="url(#linkedinGradient)"
-      stroke-width="2"
-      fill="none"
-      opacity="0.2"/>
-
-    <circle cx="400" cy="400" r="220"
-      stroke="url(#linkedinGradient)"
-      stroke-width="1.5"
-      fill="none"
-      opacity="0.15"/>
-
-    <circle cx="400" cy="400" r="160"
-      stroke="url(#linkedinGradient)"
-      stroke-width="1"
-      fill="none"
-      opacity="0.1"/>
+  <!-- Rotating Cyber Rings -->
+  <svg viewBox="0 0 800 800" class="cyber-rings">
+    <circle cx="400" cy="400" r="300" stroke="#0A66C2" stroke-width="1.5" fill="none" opacity="0.15"/>
+    <circle cx="400" cy="400" r="240" stroke="#00eaff" stroke-width="1.2" fill="none" opacity="0.12"/>
+    <circle cx="400" cy="400" r="180" stroke="#0A66C2" stroke-width="1" fill="none" opacity="0.1"/>
   </svg>
+
+  <!-- Cloud Outline -->
+  <svg viewBox="0 0 600 400" class="cloud-outline">
+    <path d="M180 260
+             Q150 200 220 180
+             Q240 140 300 160
+             Q350 130 390 170
+             Q450 170 460 220
+             Q520 230 500 280
+             Z"
+          stroke="#00eaff"
+          stroke-width="2"
+          fill="none"
+          opacity="0.1"/>
+  </svg>
+
+  <!-- Network Nodes -->
+  <div class="network">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
 </div>
 
 <!-- HEADER -->
