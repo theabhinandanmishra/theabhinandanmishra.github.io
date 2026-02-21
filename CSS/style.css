@@ -158,6 +158,7 @@ section.home {
   mask-composite: exclude;
   opacity: 0;
   transition: var(--transition-slow);
+  pointer-events: none;
 }
 
 /* Light Sweep Effect */
@@ -174,6 +175,7 @@ section.home {
   transform: rotate(25deg);
   transition: 0.7s ease;
   opacity: 0;
+  pointer-events: none;
 }
 
 .card-base:hover,
@@ -445,6 +447,8 @@ header.sticky {
   color: var(--primary);
   font-weight: 600;
   transition: var(--transition);
+  position: relative;
+  z-index: 10;
 }
 
 .company-link:hover {
