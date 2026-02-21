@@ -52,6 +52,9 @@ header {
   transform: none;      /* remove translate */
   margin: 0 auto;       /* keep centered naturally */
 }
+#menu-icon {
+  display: none;
+}
 
 .navlist a {
   font-weight: 500;
@@ -609,18 +612,7 @@ header {
     padding: 8px 14px;
     font-size: 14px;
   }
-
 }
-
-  body {
-    padding-top: 70px;
-  }
-
-  header {
-    height: 65px;
-    padding: 0 6%;
-  }
-
   #menu-icon {
     display: block;
   }
